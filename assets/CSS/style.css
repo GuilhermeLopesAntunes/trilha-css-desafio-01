@@ -1,0 +1,222 @@
+/* Importando o Reset CSS*/
+@import url('reset.css');
+
+body{
+    background-color: black;
+}
+
+h2{
+    /* 2*tamanho padrão da fonte(16*2)*/
+    font-size: 2rem;
+    /* trocando a cor da fonte*/
+    color: #33A8DB; 
+    /* Aumenta a expessura da letra */
+    font-weight: bold; 
+    /*Cria um espaço entre as letras */
+    letter-spacing: 4px;
+    /*Deixa todas letras maiusculas*/ 
+    text-transform: uppercase; 
+    /* Adiciona uma margem na parte inferior */
+    margin-bottom: 24px; 
+
+}
+
+p{
+    color: white;
+}
+
+section{
+    margin: 100px auto; /* Adiciona uma margem de 100 pixels no topo e na parte inferior, e centraliza horizontalmente (auto) nas laterais */
+}
+
+.banner{
+    /* Adiciona uma imagem de fundo com um gradiente de cores */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0.2), rgba(0, 0, 0, 0.6)), url('../images/banner.png');
+    /* Define o tamanho da imagem de fundo como 'cover', para cobrir completamente a área do elemento */
+    background-size: cover;
+    /* Evita a repetição da imagem de fundo se for menor que a div */
+    background-repeat: no-repeat;
+    /* Define a altura do elemento como 600 pixels */
+    height: 600px;
+    /* Adiciona preenchimento na parte superior do elemento */
+    padding-top: 60px;
+    /* Adiciona uma borda na parte inferior do elemento com cor e transparência específicas */
+    border-bottom: 1px solid #33A8DB80;
+}
+
+.banner .banner-content{
+    /* Define a cor do texto como branco */
+    color: white;
+    /* Estabelece uma largura fixa de 600 pixels para o elemento */
+    width: 600px;
+    /* Centraliza o elemento horizontalmente dentro de seu contêiner usando a propriedade margin */
+    margin: auto;
+    /* Centraliza o conteúdo do elemento no centro do próprio elemento */
+    text-align: center;
+}
+
+.banner h1{
+    /* Define o tamanho da fonte como 2.5 vezes o valor padrão da raiz do documento (2.5rem) */
+    font-size: 2.5rem;
+    /* Aumenta a espessura da fonte para 900 (máximo possível) */
+    font-weight: 900;
+    /* Converte todas as letras para maiúsculas */
+    text-transform: uppercase;
+    /* Define a cor do texto como transparente */
+    color: transparent;
+    /* Cria um fundo de gradiente linear para o texto, indo de #33A8DB a #1472B7 */
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    /* Foca o fundo de gradiente criado apenas na área do texto, tornando o fundo transparente fora do texto */
+    background-clip: text;
+}
+
+.banner p{
+    /* Define o tamanho da fonte como 1.25 vezes o tamanho padrão da raiz da fonte (1.25rem) */
+    font-size: 1.25rem;
+    /* Adiciona uma margem superior de 16 pixels e uma margem inferior de 24 pixels */
+    margin: 16px 0 24px;
+}
+
+.banner .logo{
+    /* Adiciona um background preto com 20% de transparência */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Cria um quadrado de 260x260 pixels */
+    height: 260px;
+    width: 260px;
+    /* Centraliza horizontalmente o elemento dentro da div */
+    margin: auto;
+    /* Cria um círculo usando a propriedade de borda-radius */
+    border-radius: 50%;
+    /* Adiciona um preenchimento interno de 16 pixels */
+    padding: 16px;
+    /* Cria uma margem inferior de 16 pixels */
+    margin-bottom: 16px;
+}
+
+.banner .logo .img{
+    /* Centraliza horizontalmente a imagem dentro da div */
+    margin: auto;
+    /* Usa 100% da largura e altura da imagem */
+    width: 100%;
+    height: 100%;
+    /* Redimensiona a imagem para caber completamente dentro da div */
+    object-fit: contain;
+}
+
+.banner .banner-content button{
+    /* Define a cor do texto como #31A8DD */
+    color: #31A8DD;
+    /* Define o tamanho da fonte como 1 vez o tamanho da raiz da fonte (1rem) */
+    font-size: 1rem;
+    /* Define a espessura da letra como negrito */
+    font-weight: bold;
+    /* Adiciona 16 pixels de preenchimento superior e inferior, e 32 pixels nas laterais */
+    padding: 16px 32px;
+    /* Converte todas as letras para maiúsculas */
+    text-transform: uppercase;
+    /* Adiciona espaçamento de 4 pixels entre as letras */
+    letter-spacing: 4px;
+    /* Define a cor de fundo como transparente */
+    background-color: transparent;
+    /* Cria uma borda com gradiente de #3BA1CD a #1572B7 */
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    /* Especifica como fatiar a imagem de borda, neste caso, 10 pixels */
+    border-image-slice: 10;
+    /* Arredonda as bordas com um raio de 30 pixels */
+    border-radius: 30px;
+}
+
+#course-content{
+    /*Define a largura de 800px*/
+    width: 800px;
+    /*alinha a div no centro*/
+    text-align: center;
+}
+
+#course-content .modules-list .module{
+    /* Define a cor do texto como branca */
+    color: white;
+    /* Define a largura como 530 pixels */
+    width: 530px;
+    /* Centraliza horizontalmente com margem superior de 0 e inferior de 24 pixels */
+    margin: 0 auto 24px;
+    /* Adiciona uma borda de 1 pixel sólida com cor #33A8DB */
+    border: 1px solid #33A8DB;
+    /* Define a cor de fundo como #252525 */
+    background-color: #252525;
+    /* Adiciona preenchimento interno de 16 pixels */
+    padding: 16px;
+    /* Arredonda as bordas com um raio de 100 pixels */
+    border-radius: 100px;
+    /* Adiciona uma sombra interna com deslocamento -5px na horizontal, 6px na vertical e espalhamento de 8px, com uma transparência de 70% */
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.7);
+
+}
+
+#course-content .modules-list .module span{
+    color: #33A8DB;
+}
+
+#transform-world{
+    /* Define a altura da div como 560 pixels */
+    height: 560px;
+    /* Redimensiona a imagem de fundo para preencher totalmente a div */
+    background-size: cover;
+    /* Define uma imagem de fundo */
+    background-image: url("../images/woman-code.png");
+    /* Mantém a imagem de fundo fixa com a rolagem da página */
+    background-attachment: fixed;
+    /* Cria bordas superior e inferior de 1 pixel com transparência de 50% */
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    /* Adiciona um padding interno de 200 pixels */
+    padding: 200px;
+
+}
+
+#transform-world p{
+    /* Define a espessura da fonte como a máxima possível (900) */
+    font-weight: 900;
+    /* Define o tamanho da fonte como 2.5 vezes o tamanho padrão da raiz */
+    font-size: 2.5rem;
+    /* Converte todo o texto para minúsculas */
+    text-transform: lowercase;
+    /* Define uma largura máxima de 250 pixels */
+    max-width: 250px;
+    /* Adiciona uma sombra ao texto com deslocamento horizontal de 3px, vertical de 2px e cor #33A8DB */
+    text-shadow: 3px 2px #33A8DB;
+}
+
+#professional-challenges{
+    /*Centraliza o conteudo na div*/
+    text-align: center;
+    /*Adiciona uma largura de 800px*/
+    width: 800px;
+}
+
+#professional-challenges img{
+    /*Adiciona margin superior e inferior de 32px*/
+    margin: 32px 0;
+}
+
+footer{
+    /*Adiciona um preenchimento de 60 px superior e inferior*/
+    padding: 60px 0;
+    /*Centraliza o conteudo da div no centro*/
+    text-align: center;
+    /*Adiciona um background linear gradient*/
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    /*Adidiona borda superior*/
+    border-top: 1px solid #33A8DB80;
+}
+
+footer .dio-logo{
+    /*Adciona uma largura de 300px*/
+    width: 300px
+}
+
+footer a{
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+}
